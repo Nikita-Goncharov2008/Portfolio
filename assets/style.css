@@ -99,7 +99,7 @@ background-color: #407fc7;
 }
 /* about me page classes */
 .about-me{
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +120,7 @@ background-color: #407fc7;
     padding: 10px;
     font-size: 1.3em;
 }
-.right_title{
+.goals__title, .personal-attitudes__title{
     text-align: right;
 }
 
@@ -282,7 +282,7 @@ background-color: #407fc7;
     font-size: 1.3em;
     text-decoration: underline;
 }
-/* keyframes, media etc. */
+/* keyframes */
 
 @keyframes h-load{
     from{
@@ -343,7 +343,7 @@ background-color: #407fc7;
         background-position: 0 0;
     }
     to {
-        background-position: 0 1080px; /* Прокрутка ровно на высоту изображения */
+        background-position: 0 1080px;
     }
 }
 
