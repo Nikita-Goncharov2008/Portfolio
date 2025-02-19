@@ -17,9 +17,9 @@ a{
     text-decoration: none;
     color: #2D2D2D;
 }
-a:visited{
+/* a:visited{
     color: #2D2D2D;
-}
+} */
 /* home page classes */
 .menu{
     max-width: 100vw;
@@ -71,31 +71,34 @@ background-color: #407fc7;
     line-height: 30px;
     font-size: 1.3em;
     font-weight: 700;
-    color: white; 
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    /* color: white; 
     text-shadow: 
       -1px -1px 0 black, 
        1px -1px 0 black, 
       -1px  1px 0 black, 
-       1px  1px 0 black; 
+       1px  1px 0 black;  */ 
 }
 
 .profile_description a{
     text-decoration: underline;
-    color: white; 
-    text-shadow: 
+    color: #3e9ef3; 
+    /* text-shadow: 
       -1px -1px 0 black, 
        1px -1px 0 black, 
       -1px  1px 0 black, 
-       1px  1px 0 black; 
+       1px  1px 0 black;  */
 }
 
 .profile_description a:visited{
-    color: white; 
-    text-shadow: 
+    color: #3e9ef3;
+    /* text-shadow: 
       -1px -1px 0 black, 
        1px -1px 0 black, 
       -1px  1px 0 black, 
-       1px  1px 0 black; 
+       1px  1px 0 black;  */
 }
 /* about me page classes */
 .about-me{
@@ -169,7 +172,7 @@ background-color: #407fc7;
     animation: j-load 1s ease-out;
 }
 .photoshop_experience{
-    width: 90%;
+    width: 80%;
     animation: p-load 1s ease-out;
 }
 .git_experience{
@@ -181,6 +184,7 @@ background-color: #407fc7;
     animation: r-load 1s ease-out;
 }
 .skills_main{
+    max-width: 100vw;
     height: 80%;
     display: grid;
     grid-template-areas: 
@@ -316,7 +320,7 @@ background-color: #407fc7;
         width: 0;
     }
     to{
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -347,3 +351,143 @@ background-color: #407fc7;
     }
 }
 
+/* media quaries */
+
+@media (min-width: 1920px) { 
+
+}
+
+@media (max-width: 1280px) { 
+
+}
+
+@media (max-width: 1024px) { 
+
+}
+
+@media (max-width: 768px) { 
+    /* about me */
+    .title{
+        margin: 5px 50px 15px;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    .bold{
+        background:white;
+
+    }
+
+    .description{
+        font-size: 1em;
+        color: white;
+    }
+
+    .explore-more{
+        font-size: 1.3em;
+        font-weight: 700;
+        border-top: 3px solid black;
+    }
+
+    /*Profile  */
+    .profile {
+        width: 80vw;
+        margin: 30px auto;
+    }
+
+    /* My skills */
+    .skills_main{
+        grid-template-areas: 
+        "html css"
+        "js react"
+        "photoshop git";
+        gap: 10px ;
+        
+    }
+
+    /* my projects */
+    .projects__main_cards-container{
+
+    }
+    .projects__main_card_main-image{
+        width: 80%;
+        height: auto;
+    }
+    
+    /* menu */
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .burger div {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .menu__buttons {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .menu__buttons.open {
+        display: flex;
+    }
+
+    .menu__element {
+        color: white;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    /* Profile */
+    .profile {
+        width: 100vw;
+        margin: 10px 0 0 ;
+    }
+    .profile__img{
+        height: 60vh;
+    }
+    /* skills */
+    .skills_main{
+        grid-template-areas: 
+        "html"
+        "css"
+        "js"
+        "react"
+        "git" 
+        'photoshop';
+    }
+    .skills{
+        padding: 8px;
+    }
+    /* projects */
+    .projects__main_card_titile{
+        font-size: 1.3em;
+    }
+    .projects__main_card_descripton{
+        font-size: 1em;
+    }
+    .projects__main_card_link{
+        font-size: 1em;
+    }
+}

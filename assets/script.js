@@ -78,7 +78,7 @@ let data = [
     },
     {
         title:'Photoshop',
-        precentage:'90%',
+        precentage:'80%',
         description:"I became familiar with Photoshop when I started learning it in school. After just a few lessons, I was impressed by the program's capabilities for creating and editing graphics. Since then, I’ve been using Photoshop to design visual elements such as logos, banners, and web page mockups, enhancing the visual appeal of my projects.",
         skillType:'photoshop',
         bar_precents: 'photoshop_experience'
@@ -154,3 +154,7 @@ function DataHendler(aboutMeMain, skillsMain, projectsMain){
 }
 
 DataHendler(aboutMeMain, skillsMain, projectsMain)
+
+function toggleMenu() {
+    document.querySelector(".menu__buttons").classList.toggle("open");
+}
