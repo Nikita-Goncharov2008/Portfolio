@@ -385,16 +385,16 @@ background-color: #407fc7;
 }
 @media (max-width: 1920px) { 
     .menu{
-        height: 100px;
+        height: 80px;
     } 
     .menu__buttons{
         gap: 30px;
     }
     .menu__element{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .projects__main_card_main-image{
-        width: 80%;
+        width: 70%;
         height: auto;
     }
     .projects__main_card_titile{
