@@ -35,13 +35,7 @@ a{
 .index-menu{
     justify-content: right;
 }
-.menu__photo{
-    display: flex;
-    justify-content: center;
-}
-.menu__photo-photo{
-    margin: 0 0 0 40px;
-}
+
 .menu__buttons{
     height: 100%;
     display: flex;
@@ -521,7 +515,7 @@ background-color: #407fc7;
         background: #333;
         flex-direction: column;
         text-align: center;
-        padding: 15px 0;
+        padding: 15px 0 0;
         z-index: 999;
     }
 
@@ -532,7 +526,7 @@ background-color: #407fc7;
     .menu__element {
         font-size: 1em;
         color: white;
-        padding: 10px;
+        padding: 10px 10px 0;
         display: block;
         width: 100%;
     }
