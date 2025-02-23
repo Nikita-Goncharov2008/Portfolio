@@ -573,6 +573,9 @@ background-color: #407fc7;
     .skills{
         padding: 8px;
     }
+    .skills__desription_expanded p{
+        font-size: 1.2em;
+    }
     /* projects */
     .projects__main_card_titile{
         font-size: 1.3em;
