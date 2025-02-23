@@ -122,11 +122,7 @@ function DataHendler(aboutMeMain, skillsMain, projectsMain){
         for(let i = 0; i<data[2].length; i++){
             blueprint = `<div class="skills ${data[2][i].skillType}">
                             <div class="shown_content">
-                                <h3 class="skills__title">${data[2][i].title}</h3>
-                                <div class="skills__skill-level_bar">
-                                    <div class="skills__skill-level_progress ${data[2][i].bar_precents}"></div>
-                                </div>
-                                <p class="skills__precentage">${data[2][i].precentage}</p> 
+                                <h3 class="skills__title">${data[2][i].title}</h3> 
                             </div>
                             <div class="skills__desription_expanded">
                                 <p>${data[2][i].description}</p>

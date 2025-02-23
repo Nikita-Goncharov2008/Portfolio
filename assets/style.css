@@ -141,18 +141,7 @@ background-color: #407fc7;
     gap:20px;
 }
 
-.skills__skill-level_bar{
-    width: 150px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: #d3e1eb;
-    border: 1px solid #B0BEC5; 
-}
-.skills__skill-level_progress{
-    border-radius: 5px;
-    height: 100%;
-    background-color: #1C4A9E;
-}
+
 .html_experience{
     width: 95%;
     animation: h-load 1s ease-out;
@@ -183,20 +172,26 @@ background-color: #407fc7;
     display: grid;
     grid-template-areas: 
         'css html js'
-        'css react photoshop'
+        'react react photoshop'
         'git git photoshop'
     ;
 }
 
+.skills__desription_expanded{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #111;
+}
 .html{
     grid-area: html;
     background-color: #e65129;
-    color: white;
 }
 .css{
     grid-area: css;
     background-color: #08acdb;
-    color: white;
 }
 .js{
     grid-area: js;
@@ -213,25 +208,39 @@ background-color: #407fc7;
 .photoshop{
     grid-area: photoshop;
     background-color: #001832;
+}
+
+.photoshop .skills__desription_expanded p{
+    color: rgb(176, 176, 176);
+}
+.photoshop .skills__title{
+    color: #08abfb;
+}
+.html .skills__title{
     color: white;
 }
 
-
-.skills__precentage{
-    font-size: 1.3em;
+.html .skills__desription_expanded p{
+    color: white;
 }
+
+.git .skills__desription_expanded p{
+    color: white;
+}
+
+.git .skills__title{
+    color: white;
+}
+
 .skills_h2{
+    margin: 20px 0  ;
     text-align: center;
     font-size: 3em;
     text-decoration: underline  ;
 }
 
-.skills__desription_expanded{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+
 /* my projects */
 
 .projects__main{
@@ -392,7 +401,7 @@ background-color: #407fc7;
         height: auto;
     }
     .projects__main_card_titile{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .projects__main_card_descripton{
         font-size: 2em;
