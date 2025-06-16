@@ -8,10 +8,12 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('../assets/images/background.png');
+    background-color: #00010c;
+    /* background-image: url('../assets/images/background.png'); */
     background-repeat: repeat; 
     background-size: 1920px 1080px; 
     animation: scrollBackground 30s linear infinite; 
+    color: white;
 }
 a{
     text-decoration: none;
@@ -22,7 +24,7 @@ a{
 } */
 /* home page classes */
 .menu{
-    width: 100vw;
+    width: 100%;
     height: 62px;
     background-color:#509ef7 ;
     display: flex;
@@ -47,7 +49,7 @@ a{
     flex-direction: column;
     justify-content: center;
     padding: 0 15px;
-
+    color: #00010c;
 }
 /* .menu__element:hover{
 background-color: #407fc7;
@@ -65,7 +67,6 @@ background-color: #407fc7;
     line-height: 30px;
     font-size: 1.3em;
     font-weight: 700;
-    color: black;
     font-weight: 700;
     font-size: 2em;
     /* color: white; 
@@ -79,20 +80,12 @@ background-color: #407fc7;
 .profile_description a{
     text-decoration: underline;
     color: #3e9ef3; 
-    /* text-shadow: 
-      -1px -1px 0 black, 
-       1px -1px 0 black, 
-      -1px  1px 0 black, 
-       1px  1px 0 black;  */
+
 }
 
 .profile_description a:visited{
     color: #3e9ef3;
-    /* text-shadow: 
-      -1px -1px 0 black, 
-       1px -1px 0 black, 
-      -1px  1px 0 black, 
-       1px  1px 0 black;  */
+
 }
 /* about me page classes */
 .about-me{
@@ -104,18 +97,22 @@ background-color: #407fc7;
 
 .title{
     font-size: 2.5em;
-    margin: 5px 80px;
+    margin: 5px 50px;
     text-decoration: underline;
 }
 .bold{
-    border: 5px solid black;
     padding: 0 10px;
+    color: #00010c;
+    border-radius: 5px ;
+    background-color:white ;
 }
+
 .description{
     margin: 10px 50px;
     background-color:#509ef7;
     padding: 10px;
     font-size: 1.3em;
+    border-radius: 5px ;
 }
 .goals__title, .personal-attitudes__title{
     text-align: right;
@@ -142,30 +139,6 @@ background-color: #407fc7;
 }
 
 
-.html_experience{
-    width: 95%;
-    animation: h-load 1s ease-out;
-}
-.css_experience{
-    width: 80%;
-    animation: c-load 1s ease-out;
-}
-.js_experience{
-    width: 75%;
-    animation: j-load 1s ease-out;
-}
-.photoshop_experience{
-    width: 80%;
-    animation: p-load 1s ease-out;
-}
-.git_experience{
-    width: 60%;
-    animation: g-load 1s ease-out;
-}
-.react_experience{
-    width: 40%;
-    animation: r-load 1s ease-out;
-}
 .skills_main{
     max-width: 100vw;
     height: 80%;
@@ -174,6 +147,7 @@ background-color: #407fc7;
         'css html js'
         'react react photoshop'
         'git git photoshop'
+        'illustrator block block'
     ;
 }
 
@@ -210,6 +184,19 @@ background-color: #407fc7;
     background-color: #001832;
 }
 
+.illustrator{
+    grid-area: illustrator;
+    background-color: #3c0401;
+}
+.illustrator .skills__title{
+    color: #ff9725;
+}
+
+.illustrator .skills__desription_expanded p{
+    color: #ff9725;
+}
+
+
 .photoshop .skills__desription_expanded p{
     color: rgb(176, 176, 176);
 }
@@ -239,7 +226,9 @@ background-color: #407fc7;
     text-decoration: underline  ;
 }
 
-
+.skills a{
+    color: #08abfb;
+}
 
 /* my projects */
 
@@ -281,69 +270,18 @@ background-color: #407fc7;
 .projects__main_card_titile{
     font-size: 1.5em;
     text-decoration: underline;
+    color: #00010c;
 }
 .projects__main_card_descripton{
     font-size: 1.3em;
+    color: #00010c;
 }
 .projects__main_card_link{
     font-size: 1.3em;
     text-decoration: underline;
+    color: #08abfb;
 }
 /* keyframes */
-
-@keyframes h-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 95%;
-    }
-}
-
-@keyframes c-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 80%;
-    }
-}
-
-@keyframes j-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 75%;
-    }
-}
-
-@keyframes p-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 80%;
-    }
-}
-
-@keyframes g-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 60%;
-    }
-}
-
-@keyframes r-load{
-    from{
-        width: 0;
-    }
-    to{
-        width: 40%;
-    }
-}
 
 @keyframes scrollBackground {
     from {
@@ -388,10 +326,10 @@ background-color: #407fc7;
 }
 @media (max-width: 1920px) { 
     .menu{
-        height: 80px;
+        height:60px;
     } 
     .menu__buttons{
-        gap: 30px;
+        gap: 0px;
     }
     .menu__element{
         font-size: 1.4em;
@@ -413,10 +351,10 @@ background-color: #407fc7;
 
 @media (max-width: 1440px)  {
     .menu{
-        height: 80px;
+        height: 60px;
     } 
     .menu__element{
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     .skills_h2{
         font-size: 4em;
@@ -433,10 +371,6 @@ background-color: #407fc7;
     }
 }
 
-@media (max-width: 1280px) { 
-
-}
-
 @media (max-width: 1024px) { 
     .menu__element{
         font-size: 1.3em;
@@ -448,13 +382,13 @@ background-color: #407fc7;
     /* about me */
     .title{
         margin: 5px 50px 15px;
-        font-size: 1.5em;
+        font-size: 1em;
         text-decoration: none;
     }
 
     .bold{
         background:white;
-
+        color: #00010c;
     }
 
     .description{
@@ -479,7 +413,8 @@ background-color: #407fc7;
         grid-template-areas: 
         "html css"
         "js react"
-        "photoshop git";
+        "photoshop git"
+        "illustrator block";
         gap: 10px ;
         
     }
@@ -494,7 +429,7 @@ background-color: #407fc7;
     /* menu */
     
     .menu{
-        height: 80px;
+        height: 60px;
     } 
 
     .burger {
@@ -502,8 +437,8 @@ background-color: #407fc7;
         flex-direction: column;
         cursor: pointer;
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 8px;
+        right: 8px;
         z-index: 1000;
     }
 
@@ -524,12 +459,12 @@ background-color: #407fc7;
         background: #333;
         flex-direction: column;
         text-align: center;
-        padding: 15px 0 0;
         z-index: 999;
     }
 
     .menu__buttons.open {
         display: flex;
+        height: 80vh;
     }
 
     .menu__element {
@@ -537,6 +472,7 @@ background-color: #407fc7;
         color: white;
         padding: 10px 10px 0;
         display: block;
+        border-bottom: #001832 1px solid;
     }
 }
 
@@ -548,6 +484,7 @@ background-color: #407fc7;
         "react"
         "git" 
         'photoshop'
+        "illustrator"
     }
   }
 
@@ -558,7 +495,12 @@ background-color: #407fc7;
         margin: 10px 0 0 ;
     }
     .profile__img{
+        margin-top: 40px;
         height: 60vh;
+    }
+    .profile_description{
+        font-size: 1em;
+        line-height: 1em;
     }
     /* skills */
     .skills_main{
@@ -568,7 +510,9 @@ background-color: #407fc7;
         "js"
         "react"
         "git" 
-        'photoshop';
+        'photoshop'
+        'illustrator';
+        
     }
     .skills{
         padding: 8px;
@@ -578,13 +522,13 @@ background-color: #407fc7;
     }
     /* projects */
     .projects__main_card_titile{
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .projects__main_card_descripton{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .projects__main_card_link{
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
 

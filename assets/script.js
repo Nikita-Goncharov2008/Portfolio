@@ -57,46 +57,45 @@ let data = [
 [
     {
         title:'HTML5',
-        precentage:'95%',
         description:'HTML was the first step in my journey as a front-end developer. I spent countless hours learning different tags, understanding how they work, and how they affect the appearance of web pages. My skills in HTML enabled me to write the structured and semantic markup for this website',
         skillType:'html',
-        bar_precents: 'html_experience'
+        
     },
     {
         title:'CSS3',
-        precentage:'80%',
         description:'CSS became the next step in my growth as a front-end developer. While learning it, I discovered my passion for web design, realizing how powerful CSS is for transforming content. I learned to create visually appealing and user-friendly interfaces, enhancing the overall user experience.',
         skillType:'css',
-        bar_precents: 'css_experience'
+       
     },
     {
         title:'JavaScript',
-        precentage:'75%',
         description:'JavaScript became my first programming language and showed me the limitless potential of front-end development. I realized that CSS was just the beginning, and JavaScript allows you to create complex and interactive web applications. Learning the basics, such as variables, arrays, functions, classes, loops, and conditions, gave me the tools to build dynamic and functional websites.',
         skillType:'js',
-        bar_precents: 'js_experience'
+        
     },
     {
         title:'Photoshop',
-        precentage:'80%',
         description:"I became familiar with Photoshop when I started learning it in school. After just a few lessons, I was impressed by the program's capabilities for creating and editing graphics. Since then, I’ve been using Photoshop to design visual elements such as logos, banners, and web page mockups, enhancing the visual appeal of my projects.",
         skillType:'photoshop',
-        bar_precents: 'photoshop_experience'
+        
     },
     {
         title:'Git',
-        precentage:'60%',
         description:'I learned Git as a supplementary tool for streamlining project workflows. It has proven to be essential for version control and collaborative development. Git helps track changes, collaborate with teams, and organize the development process effectively, making it an integral part of my workflow.',
         skillType:'git',
-        bar_precents: 'git_experience'
+        
     },
     {
         title:'ReactJS',
-        precentage:'40%',
         description:'React.js was the first framework I truly enjoyed learning. I was amazed to discover how many complex tasks can be accomplished more efficiently with less effort. This tool introduced me to new development approaches, such as component-based architecture and state management, enabling me to build scalable and dynamic applications.',
         skillType:'react',
-        bar_precents: 'react_experience'
+        
     },
+    {
+        title:'Addobe Illustrator',
+        description:'I mastered Adobe Illustrator along with Photoshop as part of my school program, but I became truly fascinated by the capabilities and focus of the software. Creating vector images and icons turned out to be incredibly engaging and interesting. I’ve created many works in this field, which I’m happy to share at the following link: <a link = "">*Link*<a/>',
+        skillType:'illustrator'
+    }
 ]
 ]
 
