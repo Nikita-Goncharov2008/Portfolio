@@ -153,3 +153,17 @@ DataHendler(aboutMeMain, skillsMain, projectsMain)
 function toggleMenu() {
     document.querySelector(".menu__buttons").classList.toggle("open");
 }
+
+
+let phone = document.querySelector('.phone')
+let gmail = document.querySelector('.gmail')
+let github = documwnt.querySelector('.github')
+
+function getCopy(){
+    const text = this.innerText;
+    navigator.clipboard.writeText(text).then(()=>{
+        
+    })
+}
+
+phone.addEventListener('click', )

@@ -9,19 +9,53 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #00010c;
-    /* background-image: url('../assets/images/background.png'); */
-    background-repeat: repeat; 
-    background-size: 1920px 1080px; 
-    animation: scrollBackground 30s linear infinite; 
+    /* display: flex; */
+    flex-direction: column;
     color: white;
 }
 a{
     text-decoration: none;
     color: #2D2D2D;
 }
-/* a:visited{
-    color: #2D2D2D;
-} */
+
+.content{
+    flex:1;
+}
+
+/* footer */
+
+footer{
+    margin-top:30px;
+    background-color:#509ef7;
+    padding: 30px 30px 0;
+    line-height:1.8em;
+    font-size: 1.2em;
+}
+
+footer a{
+    color: white;
+}
+footer ul{
+    list-style: none;
+
+}
+
+footer ul {
+
+}
+
+footer ul li span{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px ;
+}
+
+.copyright{
+    margin: 20px 0 10px;
+    color: rgb(196, 196, 196);
+    text-align: right;
+}
+
 /* home page classes */
 .menu{
     width: 100%;
@@ -69,12 +103,7 @@ background-color: #407fc7;
     font-weight: 700;
     font-weight: 700;
     font-size: 2em;
-    /* color: white; 
-    text-shadow: 
-      -1px -1px 0 black, 
-       1px -1px 0 black, 
-      -1px  1px 0 black, 
-       1px  1px 0 black;  */ 
+
 }
 
 .profile_description a{
@@ -141,7 +170,6 @@ background-color: #407fc7;
 
 .skills_main{
     max-width: 100vw;
-    height: 80%;
     display: grid;
     grid-template-areas: 
         'css html js'
@@ -283,14 +311,7 @@ background-color: #407fc7;
 }
 /* keyframes */
 
-@keyframes scrollBackground {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 0 1080px;
-    }
-}
+
 
 /* media quaries */
 @media (max-width: 2560px) { 
@@ -354,7 +375,7 @@ background-color: #407fc7;
         height: 60px;
     } 
     .menu__element{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .skills_h2{
         font-size: 4em;
@@ -369,20 +390,24 @@ background-color: #407fc7;
     .skills__desription_expanded p{
         font-size: 1.6em;
     }
+    .profile_description{
+        line-height: 1.3em;
+    }
 }
 
 @media (max-width: 1024px) { 
     .menu__element{
-        font-size: 1.3em;
+        font-size: 1em;
     }
+
 }
 
 @media (max-width: 768px) { 
 
     /* about me */
     .title{
-        margin: 5px 50px 15px;
-        font-size: 1em;
+        margin: 5px 50px 10px;
+        font-size: 1.3em;
         text-decoration: none;
     }
 
@@ -392,12 +417,12 @@ background-color: #407fc7;
     }
 
     .description{
-        font-size: 1em;
+        font-size: 1.2em;
         color: white;
     }
 
     .explore-more{
-        font-size: 1.3em;
+        font-size: 1.1em;
         font-weight: 700;
         border-top: 3px solid black;
     }
@@ -406,6 +431,9 @@ background-color: #407fc7;
     .profile {
         width: 80vw;
         margin: 30px auto;
+    }
+    .profile_description{
+        line-height: 1.2em;
     }
 
     /* My skills */
@@ -486,6 +514,7 @@ background-color: #407fc7;
         'photoshop'
         "illustrator"
     }
+
   }
 
 @media (max-width: 480px) { 
@@ -496,7 +525,7 @@ background-color: #407fc7;
     }
     .profile__img{
         margin-top: 40px;
-        height: 60vh;
+        height: 45vh;
     }
     .profile_description{
         font-size: 1em;
@@ -530,11 +559,22 @@ background-color: #407fc7;
     .projects__main_card_link{
         font-size: 1.1em;
     }
+
+    /* footer */
+    footer{
+        font-size: 1em;
+        padding: 15px 15px 0;
+    }
 }
 
 @media (max-width:350px) {
+    .profile__img{
+        max-height: 40vh;
+    }
     .skills__skill-level_bar{
         width: 80px;
         height: 10px;
     }
+
+
 }

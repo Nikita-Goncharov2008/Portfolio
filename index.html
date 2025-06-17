@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 </head>
+<style>
+    .copied{
+        display:none;
+    }    
+</style>
 <body>
+<div class="content">
+    <div class="copied">copied</div>
     <header class="menu index-menu">
         <div class="burger" onclick="toggleMenu()">
             <div></div>
@@ -25,6 +32,19 @@
         <img height="400px" class="profile__img" src="./assets/images/asset.jpg" alt="Nikita Goncharov">
         <p class="profile_description">A motivated front-end programmer dedicated to building impactful digital experiences and continuously advancing his skills. <br> Learn more <a href="./html/aboutMe.html">about me</a> or watch <a href="./html/myProjects.html">my projects</a> and <a href="./html/mySkills.html">skills</a>.</p>
     </main> 
+</div>
+    
+
+    <footer>
+        <p class="resume">Link to download my resume - <a href="./assets/docs/resum-frontend-developer.docx">download</a></p>
+        <p class="contacts">Contacts</p>
+        <ul>
+            <li>phone number - <span class="phone">+19347991668</span></li>
+            <li>email - <span class = 'gmail'>nikitwork16@gmail.com</span></li>
+            <li>GitHub - <span class="github">Nikita-Goncharov2008</span></li>
+        </ul>
+        <p class="copyright">&copy; 2025 Nikita Goncharov</p>
+    </footer>
 </body>
 <script src="./assets/script.js">
 function toggleMenu() {
