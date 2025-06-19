@@ -10,11 +10,19 @@
 <style>
     .copied{
         display:none;
+        font-size: 1.2em  ;
+        background:gray;
+        background-color:rgba(128, 128, 128, 0.5);
+        padding:15px;
+        position: absolute;
+        border-radius: 12px;
+        bottom:-25vh;
+        left:25vw
     }    
 </style>
 <body>
 <div class="content">
-    <div class="copied">copied</div>
+    <div class="copied">copied✅</div>
     <header class="menu index-menu">
         <div class="burger" onclick="toggleMenu()">
             <div></div>
@@ -43,7 +51,7 @@
             <li>email - <span class = 'gmail'>nikitwork16@gmail.com</span></li>
             <li>GitHub - <span class="github">Nikita-Goncharov2008</span></li>
         </ul>
-        <p class="copyright">&copy; 2025 Nikita Goncharov</p>
+        <p class="copyright"><span class = 'copyright-year'></span> Nikita Goncharov</p>
     </footer>
 </body>
 <script src="./assets/script.js">

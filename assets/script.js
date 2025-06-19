@@ -157,13 +157,32 @@ function toggleMenu() {
 
 let phone = document.querySelector('.phone')
 let gmail = document.querySelector('.gmail')
-let github = documwnt.querySelector('.github')
+let github = document.querySelector('.github')
 
-function getCopy(){
-    const text = this.innerText;
+let copied = document.querySelector('.copied')
+function getCopy(event){
+    const text = event.currentTarget.innerText;
     navigator.clipboard.writeText(text).then(()=>{
-        
+            copied.style.display = 'block'
+            copied.style.animationName = 'appearing'
+            copied.style.animationDuration = '0.4s'
+            copied.style.animationTimingFunction = 'ease-in'
+            copied.style.animationFillMode = 'forwards'
+        setTimeout(()=>{
+            copied.style.animationName = 'disappearing'
+            copied.style.animationDuration = '0.4s'
+            copied.style.animationTimingFunction = 'ease-in'
+            copied.style.animationFillMode = 'forwards'
+            copied.style.display = 'none'
+        },1000)
     })
 }
 
-phone.addEventListener('click', )
+phone.addEventListener('click', getCopy)
+gmail.addEventListener('click', getCopy)
+github.addEventListener('click', getCopy)
+
+copyrightYear = document.querySelector('.copyright-year')
+copyrightYear.innerHTML = new Date().getFullYear()
+
+console.log(new Date().getFullYear())
