@@ -84,9 +84,6 @@ footer ul li span{
     padding: 0 15px;
     color: #00010c;
 }
-/* .menu__element:hover{
-background-color: #407fc7;
-} */
 
 .profile{
     width: 61vw;
@@ -149,6 +146,7 @@ background-color: #407fc7;
 .explore-more{
     text-align: center;
     font-size: 1.5em;
+    margin: 15px 0 30px;
 }
 /* skills page */
 
@@ -425,6 +423,7 @@ background-color: #407fc7;
         font-weight: 700;
         border-top: 3px solid black;
     }
+
 
     /*Profile  */
     .profile {
