@@ -49,6 +49,10 @@ footer ul li span{
     text-underline-offset: 2px ;
 }
 
+footer ul li span:active{
+    background-color:#2d5f98;
+}
+
 .copyright{
     margin: 20px 0 10px;
     color: rgb(196, 196, 196);
