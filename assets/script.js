@@ -182,7 +182,4 @@ phone.addEventListener('click', getCopy)
 gmail.addEventListener('click', getCopy)
 github.addEventListener('click', getCopy)
 
-copyrightYear = document.querySelector('.copyright-year')
-copyrightYear.innerHTML += ` ${new Date().getFullYear()}`
 
-console.log(new Date().getFullYear())
