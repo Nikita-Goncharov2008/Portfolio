@@ -93,7 +93,7 @@ let data = [
     },
     {
         title:'Addobe Illustrator',
-        description:'I mastered Adobe Illustrator along with Photoshop as part of my school program, but I became truly fascinated by the capabilities and focus of the software. Creating vector images and icons turned out to be incredibly engaging and interesting. I’ve created many works in this field, which I’m happy to share at the following link: <a link = "">*Link*<a/>',
+        description:'I mastered Adobe Illustrator along with Photoshop as part of my school program, but I became truly fascinated by the capabilities and focus of the software. Creating vector images and icons turned out to be incredibly engaging and interesting. I’ve created many works in this field, which I’m happy to share at the following  <a target = "_blank" href = "https://nikita-goncharov2008.github.io/Gallery/">link<a/>',
         skillType:'illustrator'
     }
 ]
